@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+    <header class="jumbotron masthead" id="overview">
+      <div class="inner">
+        <div class="container">
+          <h1>3D Printing - Toulouse</h1>
+          <p class="lead">
+          Retrouvez des utilisateurs d'imprimantes 3D à Toulouse,<br>
+          afin de partager vos dernières expériences sur ces technologies<br>
+          </p>
+          <p><strong>prochain event:</strong> samedi 28 janvier à partir de 14h à Planète Sciences Midi-Pyrénées</p>
+        </div><!-- /container -->
+      </div>
+    </header>
+
+    <div class="container">
+
+      <section id="intro">
+        <div class="row">
+          <div class="span4 offset1">
+            <h2>Prochain Event</h2>
+            <p><em>samedi 28 janvier</em> à partir de 14h</p>
+            <address>
+              <strong>Planète Sciences Midi-Pyrénées</strong><br>
+              Bâtiment Marine<br>
+              14 rue Hermès<br>
+              31520 Ramonville-Saint-Agne<br>
+              <a href="http://www.planete-sciences.org">http://www.planete-sciences.org</a><br>
+              <a href="http://www.openstreetmap.org/?lat=43.549034&lon=1.485413&zoom=18&layers=M">Plan d'accès</a>
+            </address>
+          </div>
+          <div class="span5">
+            <h2>Pourquoi? Comment?</h2>
+            <p>Durant la Novela 2011, des personnes des Pays-Bas de 
+            <a href="http://ultimaker.com">Ultimaker</a> et 
+            <a href="http://protoscape.nl">Protoscape</a>
+            nous ont donné leur recette pour faire partager
+            leurs expériences avec des imprimantes 3D: 
+            <strong>se retrouver une fois toutes les 6 semaines</strong></p>
+            <p>Cet évènement est <strong>gratuit</strong> et <strong>ouvert à tous</strong>.</p>
+          </div>
+          <div class="span5">
+            <h2>Participants</h2>
+            <ul>
+              <li>Vous avez une imprimante 3D et vous voulez partager vos connaissances</li>
+              <li>Vous voulez vous renseigner sur les technologies d'impression 3D</li>
+              <li>Vous voulez monter votre imprimante 3D</li>
+              <li>Association <a hreF="http://www.planete-sciences.org">Planète Sciences Midi-Pyrénées</a></li>
+              <li>Association <a href="http://tetalab.org">Tetalab</a> - <a href="http://hackerspaces.org">Hackerspaces.org</a></li>
+              <li>Association <a href="http://artilect.fr">Artilect</a> - <a href="http://fabfolk.com/">Fablab</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <footer>
+      </footer>
+    </div> <!--! end of #container -->
+
+    <!--[if lt IE 7 ]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+  </body>
+</html>
